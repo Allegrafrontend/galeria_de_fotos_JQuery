@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #6027CD;
+    border-bottom: 9px solid #341F98;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
+}
+header button{
+    margin-left: 16px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #019433;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+form{
+    background-color: #C8D6E6;
+    padding: 20px 0px;
+    text-align: center;
+    display: none;
+}
+form h2{
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+form input{
+    padding: 6px;
+}
+form button{
+    padding: 6px;
+    background-color: #019433;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#botao_cancelar{
+    background-color: red;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+ul li img{
+    width: 100%;
+    height: 280px;
+}
+.overlay_image_link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+.overlay_image_link a{
+    text-decoration: none;
+    color: white;
+}
+ul li:hover .overlay_image_link{
+    opacity: 1;
+}
